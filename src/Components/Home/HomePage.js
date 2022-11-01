@@ -28,7 +28,6 @@ const HomePage = () => {
     },[]);
     return (
     <>
-      {/* {[false, 'xs'].map((expand) => ( */}
         <Navbar key="xs" bg="light" expand="xs" className="mb-3">
           <Container fluid>
             <Navbar.Brand href="#"></Navbar.Brand>
@@ -51,7 +50,6 @@ const HomePage = () => {
             </Navbar.Offcanvas>
           </Container>
         </Navbar>
-      {/* ))} */}
           </>
     )
 }

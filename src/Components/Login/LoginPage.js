@@ -35,13 +35,10 @@ const LoginPage = () => {
         e.preventDefault();
         localStorage.setItem('loginDetails', JSON.stringify(loginDetails));
         navigate('/home');
-        console.log("FORM SUBMIT!", loginDetails);
     }
     const getDataFromLocalStorage = () => {
         if (localStorage.getItem("loginDetails") !== null) {
-            console.log('here it has data');
             let userCredentials = JSON.parse(localStorage.getItem("loginDetails"));
-            console.log("userCredentials", userCredentials);
             setLoginDetails(userCredentials);
         }
     }
