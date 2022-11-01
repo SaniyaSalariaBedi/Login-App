@@ -63,7 +63,7 @@ const LoginPage = () => {
                             <FormControl type="password" name="password" placeholder="Password" onChange={handleChange} value={loginDetails.password} />
                         </FormGroup>
                         <FormGroup controlId="formSubmit">
-                            <Button variant="secondary" size="lg" type="submit" disabled={loginDetails.userName.length == 0 || loginDetails.email.length == 0 || loginDetails.password.length == 0 || !validator.isEmail(loginDetails.email)} onClick={handleFormSubmit}>
+                            <Button variant="secondary" size="lg" type="submit" disabled={loginDetails.userName.length === 0 || loginDetails.email.length === 0 || loginDetails.password.length === 0 || !validator.isEmail(loginDetails.email)} onClick={handleFormSubmit}>
                                 Submit
                             </Button>
                         </FormGroup>
